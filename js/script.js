@@ -55,8 +55,11 @@ function generateTitleLinks(){
   titleList.innerHTML = '';
 
   /* for each article */
-
+  const articles = document.querySelectorAll(optArticleSelector);
+  for(let article of articles){
+    
     /* get the article id */
+    const articleId = article.getAttribute("id");
 
     /* find the title element */
 
@@ -65,6 +68,9 @@ function generateTitleLinks(){
     /* create HTML of the link */
 
     /* insert link into titleList */
+    
+  }
+    
 
 }
 
